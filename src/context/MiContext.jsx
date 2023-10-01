@@ -1,15 +1,14 @@
-import { createContext, useState } from 'react'
+import { createContext, useState } from 'react'; // importación de useContext y useState
 
-// importación del archivo con la información a consumir
-import imagenes from '../../public/photos.json'
+import imagenes from '../../public/photos.json'; // importación del archivo con la información a consumir
 
-// se crea el contexto (punto 1 del desafío)
-export const MiContexto = createContext()
+export const MiContexto = createContext(); // Creación de un contexto (punto 1)
 
 // Se crea un hook con useState que se asigna como valor
 // del Provider creado (punto 3 del desafío)
 const ImageProvider = ({children}) => {
-  const [fotos, setFotos] = useState(imagenes.photos)
+  // Estado creado con useState que se pasará al valor de Provider (punto 3)
+  const [fotos, setFotos] = useState(imagenes.photos);
 
   return(
     <MiContexto.Provider value={{fotos, setFotos}}>

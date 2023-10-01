@@ -7,7 +7,7 @@ import IconHeart from '../components/IconHeart';
 import '../assets/mis-estilos.css';
 
 const Gallery = () => {
-  const {fotos, setFotos} = useContext(MiContexto)
+  const {fotos, setFotos} = useContext(MiContexto); // Uso de useContext (punto 4)
 
   const favorita = (id) => {
     const fotoIndex = fotos.findIndex(e => e.id === id);

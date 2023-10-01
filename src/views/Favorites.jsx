@@ -4,7 +4,7 @@ import { MiContexto } from "../context/MiContext";
 import Card from 'react-bootstrap/Card';
 
 const Favorites = () => {
-  const {fotos, setFotos} = useContext(MiContexto);
+  const {fotos, setFotos} = useContext(MiContexto); // Uso de useContext (punto 4)
   
   const borrar = (id) => {
     const fotoIndex = fotos.fotoIndex(e => e.id === id);
