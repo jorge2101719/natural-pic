@@ -1,0 +1,11 @@
+.mi-estilo{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.mi-navegador {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
